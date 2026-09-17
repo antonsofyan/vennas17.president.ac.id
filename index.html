@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beranda - Vennas 2026</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="font-dm text-gray-800 antialiased">
+<body class="font-dm text-gray-800 antialiased overflow-x-hidden">
   <!-- Section 1: Top Bar -->
   <div class="bg-white py-5 border-b border-gray-200">
     <div class="w-full mx-auto px-6 md:px-12 lg:px-20 xl:px-32 flex items-center justify-between">
       <div class="flex items-center gap-8">
         <a href="index.html">
-          <img src="assets/images/vennas_logo/vennas_logo.png" alt="Vennas Logo" class="h-20 lg:h-24 w-auto">
+          <img src="assets/images/vennas_logo/vennas_logo.png" alt="Vennas Logo" class="h-12 md:h-20 lg:h-24 w-auto max-w-[200px] md:max-w-none">
         </a>
         <div class="hidden sm:flex items-center gap-4">
           <a href="mailto:vennas.aihii2026@gmail.com" class="text-gray-400 hover:text-vennas-blue transition-colors" aria-label="Email">
@@ -70,9 +71,9 @@
   <!-- Section 2: Hero Banner -->
   <div class="relative min-h-screen w-full flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/illustration/image_4.jpeg');">
     <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.65);"></div>
-    <div class="relative z-10 text-center px-6 py-24 text-white w-full max-w-5xl mx-auto">
+    <div class="relative z-10 text-center px-6 py-24 text-white w-full max-w-5xl mx-auto" data-aos="fade-up">
       <h1 class="font-libre text-6xl md:text-8xl font-bold mb-6">VENNAS 2026</h1>
-      <p class="font-libre text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-widest mb-8 whitespace-nowrap">KONVENSI NASIONAL HUBUNGAN INTERNASIONAL</p>
+      <p class="font-libre text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-widest mb-8 whitespace-normal sm:whitespace-nowrap">KONVENSI NASIONAL HUBUNGAN INTERNASIONAL</p>
       <hr class="w-16 border-t-2 border-white mx-auto mb-8">
       <p class="font-dm text-2xl md:text-3xl mb-3">Jababeka &middot; Indonesia</p>
       <p class="font-dm text-xl md:text-2xl tracking-wide mb-12">Secara langsung | 12&ndash;15 Oktober 2026</p>
@@ -88,7 +89,7 @@
     <div class="w-full mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
       
       <!-- Text Content -->
-      <div class="w-full md:w-1/2 md:pr-12 z-10 relative">
+      <div class="w-full md:w-1/2 md:pr-12 z-10 relative" data-aos="fade-right">
         <h2 class="text-vennas-blue font-dm text-4xl md:text-5xl font-semibold mb-6 leading-snug">Konvensi Hubungan Internasional terbesar di Indonesia.</h2>
         <p class="font-dm text-lg md:text-xl text-black leading-relaxed mb-8">
           Vennas mempertemukan para akademisi dan mahasiswa Hubungan Internasional dari seluruh Indonesia dalam satu forum. Kami berkomitmen untuk memperkuat kajian akademis di Indonesia demi mendukung kemajuan dunia akademis.
@@ -99,7 +100,7 @@
     </div>
 
     <!-- Desktop Full-bleed Image -->
-    <div class="hidden md:block absolute right-0 w-1/2 h-[450px] md:h-[550px] lg:h-[650px] top-20 md:top-28 lg:top-32">
+    <div data-aos="fade-left" class="hidden md:block absolute right-0 w-1/2 h-[450px] md:h-[550px] lg:h-[650px] top-20 md:top-28 lg:top-32">
       <div class="relative w-full h-full">
         <img src="assets/images/illustration/image_1.jpeg" alt="Konvensi Vennas" class="w-full h-full object-cover">
         <!-- Blue Strip with Gap -->
@@ -108,7 +109,7 @@
     </div>
     
     <!-- Mobile image fallback -->
-    <div class="md:hidden w-full h-[400px] mt-12 mb-8 relative">
+    <div data-aos="fade-up" class="md:hidden w-full h-[400px] mt-12 mb-8 relative">
       <img src="assets/images/illustration/image_1.jpeg" alt="Konvensi Vennas" class="w-full h-full object-cover">
       <!-- Blue Strip with Gap -->
       <div class="absolute -bottom-4 left-0 w-2/3 h-[4px] bg-vennas-blue"></div>
@@ -118,7 +119,7 @@
   <!-- Section 4: Call for Papers -->
   <div class="bg-white py-20 md:py-28">
     <div class="w-full mx-auto px-6 md:px-12 lg:px-20 xl:px-32 grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
-      <div class="flex justify-center md:justify-end pr-0 md:pr-12">
+      <div class="flex justify-center md:justify-end pr-0 md:pr-12" data-aos="zoom-in-right">
         <div class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px]">
           <!-- Decorative blue arc that doesn't touch the image -->
           <div class="absolute -inset-4 md:-inset-6 rounded-full border-b-[3px] border-l-[3px] border-vennas-blue"></div>
@@ -126,7 +127,7 @@
           <img src="assets/images/illustration/image_2.jpg" alt="Call for Papers" class="relative rounded-full w-full h-full object-cover">
         </div>
       </div>
-      <div class="md:pl-8">
+      <div class="md:pl-8" data-aos="fade-left">
         <h2 class="text-vennas-blue font-dm text-4xl md:text-5xl font-semibold mb-8 leading-snug">Sampaikan gagasan Anda dalam forum Vennas.</h2>
         <p class="font-dm text-lg md:text-xl text-black leading-relaxed mb-6">
           Kami mengundang para akademisi Hubungan Internasional untuk berbagi penelitian dan gagasan melalui Call for Papers. Jelajahi berbagai isu terkini seputar tata kelola global dan inovasi.
@@ -142,87 +143,87 @@
   <!-- Section 5: Peluang Publikasi -->
   <div class="bg-white py-20 md:py-28">
     <div class="w-full mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
-      <h2 class="text-vennas-blue font-dm text-4xl md:text-5xl font-semibold mb-12">Peluang publikasi</h2>
+      <h2 class="text-vennas-blue font-dm text-4xl md:text-5xl font-semibold mb-12" data-aos="fade-up">Peluang publikasi</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 lg:gap-y-10">
         <!-- List of journals -->
-        <a href="https://ejournal.fisip.unjani.ac.id/index.php/jurnal-dinamika-global/index" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://ejournal.fisip.unjani.ac.id/index.php/jurnal-dinamika-global/index" data-aos="fade-up" data-aos-delay="0" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Jurnal Dinamika Global</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://journal.aihii.or.id/" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://journal.aihii.or.id/" data-aos="fade-up" data-aos-delay="50" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Indonesian Journal of International Relations</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://journal.ugm.ac.id/globalsouth" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://journal.ugm.ac.id/globalsouth" data-aos="fade-up" data-aos-delay="100" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Global South Review</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://sinta.kemdiktisaintek.go.id/journals/profile/4878" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://sinta.kemdiktisaintek.go.id/journals/profile/4878" data-aos="fade-up" data-aos-delay="150" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Jurnal Studi Diplomasi dan Keamanan</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://jurnal.amikom.ac.id/index.php/nsjis" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://jurnal.amikom.ac.id/index.php/nsjis" data-aos="fade-up" data-aos-delay="200" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Nation State: Journal of International Studies</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://sinta.kemdiktisaintek.go.id/journals/profile/11608" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://sinta.kemdiktisaintek.go.id/journals/profile/11608" data-aos="fade-up" data-aos-delay="250" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Pena Wimaya</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://garuda.kemdiktisaintek.go.id/journal/analysis/20342" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://garuda.kemdiktisaintek.go.id/journal/analysis/20342" data-aos="fade-up" data-aos-delay="300" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Journal of International Studies on Energy Affairs</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://jos.unsoed.ac.id/index.php/insignia" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://jos.unsoed.ac.id/index.php/insignia" data-aos="fade-up" data-aos-delay="350" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Insignia: Journal of International Relations</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://dauliyah.journal.unida.gontor.ac.id/" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://dauliyah.journal.unida.gontor.ac.id/" data-aos="fade-up" data-aos-delay="400" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Dauliyah Journal of Islamic and International Affairs</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://journal.unpas.ac.id/index.php/transborders/" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://journal.unpas.ac.id/index.php/transborders/" data-aos="fade-up" data-aos-delay="450" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>TransBORDER: International Relations Journal</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://e-journal.unas.ac.id/index.php/jsps/" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://e-journal.unas.ac.id/index.php/jsps/" data-aos="fade-up" data-aos-delay="500" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Journal of Social Political Sciences</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </div>
           <div class="w-12 h-[3px] bg-vennas-blue mt-3 group-hover:w-full transition-all duration-300"></div>
         </a>
-        <a href="https://journal.uta45jakarta.ac.id/index.php/GIJ" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
+        <a href="https://journal.uta45jakarta.ac.id/index.php/GIJ" data-aos="fade-up" data-aos-delay="550" class="group flex flex-col items-start text-black font-dm text-xl md:text-2xl hover:text-vennas-blue transition-colors">
           <div class="flex items-center space-x-2">
             <span>Global Insight Journal</span>
             <svg class="w-5 h-5 text-vennas-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -236,5 +237,15 @@
   <div id="footer-placeholder"></div>
   <div id="nav-placeholder" class="md:hidden"></div>
   <script src="assets/js/components.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 50,
+      });
+    });
+  </script>
 </body>
 </html>
