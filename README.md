@@ -1,4 +1,4 @@
-# Vennas 2026 Website
+# vennas17.president.ac.id
 
 Website resmi untuk **Konvensi Nasional Asosiasi Ilmu Hubungan Internasional Indonesia (Vennas AIHII ke-17)** yang diselenggarakan pada tahun 2026 di Jababeka, Indonesia (Tuan rumah: President University).
 
