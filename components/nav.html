@@ -1,0 +1,75 @@
+<!-- Floating hamburger button -->
+<button id="nav-toggle"
+        class="fixed right-4 top-20 z-50 w-12 h-12 bg-vennas-blue text-white rounded-full shadow-lg flex items-center justify-center hover:bg-sky-600 transition-colors"
+        aria-label="Menu">
+  <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+  </svg>
+  <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+  </svg>
+</button>
+
+<!-- Overlay -->
+<div id="nav-overlay" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+
+<!-- Sidebar -->
+<nav id="nav-sidebar"
+     class="fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out">
+  <div class="pt-20 px-6">
+    <ul class="space-y-1">
+      <li>
+        <a href="about.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Tentang</a>
+      </li>
+      <li>
+        <a href="about-presuni.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">President University</a>
+      </li>
+      <li>
+        <a href="https://docs.google.com/forms/d/1O7ajk9BGn7jTdaluu8SWGmqk_Ens1D5O0U6Gfc9d8I/"
+           target="_blank" rel="noopener"
+           class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">
+          Registrasi
+        </a>
+      </li>
+      <li>
+        <a href="important-date.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Tanggal Penting</a>
+      </li>
+      <li>
+        <a href="location.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Lokasi</a>
+      </li>
+      <li>
+        <a href="contact.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Kontak</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var sidebar = document.getElementById('nav-sidebar');
+  var overlay = document.getElementById('nav-overlay');
+  var iconOpen = document.getElementById('nav-icon-open');
+  var iconClose = document.getElementById('nav-icon-close');
+  var open = false;
+
+  function setNav(show) {
+    open = show;
+    if (show) {
+      sidebar.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    } else {
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }
+  }
+
+  toggle.addEventListener('click', function() { setNav(!open); });
+  overlay.addEventListener('click', function() { setNav(false); });
+})();
+</script>
+

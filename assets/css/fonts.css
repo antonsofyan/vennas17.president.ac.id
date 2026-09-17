@@ -1,0 +1,42 @@
+/* Bebas Neue — buttons, section labels */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebas_neue/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans — body text, nav, paragraphs (variable font) */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm_sans/DMSans-VariableFont_opsz%2Cwght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/dm_sans/DMSans-Italic-VariableFont_opsz%2Cwght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Libre Baskerville — hero display title (variable font) */
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/libre_baskerville/LibreBaskerville-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../fonts/libre_baskerville/LibreBaskerville-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
