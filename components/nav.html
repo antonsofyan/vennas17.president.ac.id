@@ -15,61 +15,47 @@
 
 <!-- Sidebar -->
 <nav id="nav-sidebar"
-     class="fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out">
-  <div class="pt-20 px-6">
+     class="fixed top-0 right-0 h-full w-72 sm:w-80 bg-white z-50 shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+  
+  <!-- Sidebar Header: Logo & Close Button -->
+  <div class="flex items-center justify-between px-6 py-6 border-b border-gray-100">
+    <a href="index.html">
+      <img src="assets/images/vennas_logo/vennas_logo.png" alt="Vennas Logo" class="h-16 md:h-20 w-auto">
+    </a>
+    <button id="nav-close-btn" class="p-1 text-gray-500 hover:text-vennas-blue transition-colors" aria-label="Tutup menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="pt-6 px-6 pb-12">
     <ul class="space-y-1">
       <li>
-        <a href="about.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Tentang</a>
+        <a href="index.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">Beranda</a>
       </li>
       <li>
-        <a href="about-presuni.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">President University</a>
+        <a href="about.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">Tentang</a>
       </li>
       <li>
-        <a href="https://docs.google.com/forms/d/1O7ajk9BGn7jTdaluu8SWGmqk_Ens1D5O0U6Gfc9d8I/"
+        <a href="about-presuni.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">President University</a>
+      </li>
+      <li>
+        <a href="https://docs.google.com/forms/d/1O7ajki9BGn7jTdaUuoB5WGmiqk_Ens1D5QOUuGFdv8I/"
            target="_blank" rel="noopener"
-           class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">
+           class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">
           Registrasi
         </a>
       </li>
       <li>
-        <a href="important-date.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Tanggal Penting</a>
+        <a href="important-date.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">Tanggal Penting</a>
       </li>
       <li>
-        <a href="location.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Lokasi</a>
+        <a href="location.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">Lokasi</a>
       </li>
       <li>
-        <a href="contact.html" class="block py-3 px-3 font-dm font-medium text-gray-800 hover:bg-gray-100 rounded transition-colors">Kontak</a>
+        <a href="contact.html" class="block py-3 px-3 font-dm text-lg font-medium text-gray-800 hover:text-vennas-blue hover:bg-gray-50 rounded transition-colors">Kontak</a>
       </li>
     </ul>
   </div>
 </nav>
-
-<script>
-(function() {
-  var toggle = document.getElementById('nav-toggle');
-  var sidebar = document.getElementById('nav-sidebar');
-  var overlay = document.getElementById('nav-overlay');
-  var iconOpen = document.getElementById('nav-icon-open');
-  var iconClose = document.getElementById('nav-icon-close');
-  var open = false;
-
-  function setNav(show) {
-    open = show;
-    if (show) {
-      sidebar.classList.remove('translate-x-full');
-      overlay.classList.remove('hidden');
-      iconOpen.classList.add('hidden');
-      iconClose.classList.remove('hidden');
-    } else {
-      sidebar.classList.add('translate-x-full');
-      overlay.classList.add('hidden');
-      iconOpen.classList.remove('hidden');
-      iconClose.classList.add('hidden');
-    }
-  }
-
-  toggle.addEventListener('click', function() { setNav(!open); });
-  overlay.addEventListener('click', function() { setNav(false); });
-})();
-</script>
-
